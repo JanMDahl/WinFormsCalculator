@@ -30,7 +30,7 @@ namespace Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            
+
             this.plusMinusButton = new System.Windows.Forms.Button();
             this.zeroButton = new System.Windows.Forms.Button();
             this.decimalButton = new System.Windows.Forms.Button();
@@ -336,8 +336,8 @@ namespace Calculator
             this.Controls.Add(this.zeroButton);
             this.Controls.Add(this.plusMinusButton);
             this.MinimumSize = new System.Drawing.Size(859, 776);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Calculator";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
 
         }
@@ -369,4 +369,3 @@ namespace Calculator
         private System.Windows.Forms.Label display;
     }
 }
-

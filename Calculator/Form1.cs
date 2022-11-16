@@ -114,8 +114,27 @@ namespace Calculator
                     first = input;
                     input = "";
                     return;
-                case (char)13:
+                case ',':
+                    if (input.Contains(","))
+                    {
+                        return;
+                    }
+
+                    display.Text = "";
+                    input += ",";
+                    display.Text += input;
+                    return;
+                case '=':
                     Calculate();
+                    return;
+                case (char)Keys.Enter:
+                    Calculate();
+                    return;
+                case (char)8:
+                    backspaceButton_Click(sender, e);
+                    return;
+                case (char)27:
+                    clearButton_Click(sender, e);
                     return;
                 default:
                     break;
